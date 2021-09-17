@@ -1,11 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title> Document</title>
+
+<style>
+	.box{
+		width:400px;
+		border:1px solid #ccc;
+		margin:100px auto;
+	}
+	.box input{
+		width: 370px;
+		height:30px;
+		border:0;
+		outline:none;
+	}
+	.box img{
+		position:absolute;
+		top:2px;
+		right:2px;
+		width:24px;
+
+	}
+</style>
+</head>
+
+<body>
+	<div class="box">
+		<label for="">
+			<img src="" alt="" id="eye">
+		</label>
+		<input type="password" name="" id="">
+	</div>
 
 
-<html>
-  
-  
-  
-  <iframe src="https://www.baidu.com" style="width:500px; height:400px;"> </iframe>
-  
-  
-  
+
+</body>
+
+	<script>
+
+//1.获取元素
+var eye = document.getElementById('eye');
+var pwd = document.getElementById('pwd');
+
+//2.注册事件，处理程序
+var flag = 0;
+eye.onclick = function(){
+	if (flag == 0){
+		pwd.type = 'text';
+		flag = 1;
+	}else{
+		pwd.type = 'password';
+		flag = 0;
+	}
+	
+}
+
+
+
+</script>
 </html>
